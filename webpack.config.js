@@ -33,8 +33,8 @@ module.exports = {
       title: "HTML webpack 插件"
     }),
     // 热更新引入webpack,(生成环境切勿开启，增加包大小)
-    new webpack.NamedModulesPlugin(),
-    new webpack.HotModuleReplacementPlugin()
+    // new webpack.NamedModulesPlugin(),
+    // new webpack.HotModuleReplacementPlugin()
   ],
   module: {
     rules: [

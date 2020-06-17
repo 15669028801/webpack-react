@@ -4,12 +4,13 @@
   // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
+
     {
       "type": "pwa-chrome",
       "request": "launch",
       "name": "Open index.html",
       "file": "e:\\project\\webpack-react-template\\dist\\index.html",
-      "webRoot": "${workspaceFolder}/wwwroot"
+      // "webRoot": "${workspaceFolder}/dist"
     }
   ]
 }
