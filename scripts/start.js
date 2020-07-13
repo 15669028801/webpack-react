@@ -4,6 +4,8 @@ const webpackConfig = require('../config/webpack.dev.js');
 
 // 引入编译器webpack
 const compiler = webpack(webpackConfig);
+console.log("服务器配置");
+console.log( webpackConfig);
 
 const options = Object.assign({}, webpackConfig.devServer, {
   open: true

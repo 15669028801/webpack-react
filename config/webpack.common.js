@@ -13,7 +13,8 @@ function webpackCommonConfigCreator(options) {
    */
   return {
     mode: options.mode,
-    entry: './src/index.js',
+    devtool: options.devtool || null,
+    entry: options.entry || './src/index.js',
     output: {
       publicPath: "/",
       path: path.resolve(__dirname, '../build'),
@@ -151,6 +152,7 @@ function webpackCommonConfigCreator(options) {
         minChunks: 1,
       },
     },
+    devServer: options.devServer || {}
   };
 }
 

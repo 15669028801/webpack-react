@@ -18,7 +18,16 @@ const options = {
   devServer: {
     contentBase: path.join(__dirname, "../dist"),
     hot: true,
-  }
+    proxy: {
+      "/api": {
+        target: "http://8.129.172.31",
+        bypass: (req, res) => {
+          console.log("代理执行............");
+          console.log(req);
+        }
+      }
+    }
+  },
 };
 
 module.exports = merge(webpackConfigCreator(options), config);

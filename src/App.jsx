@@ -4,6 +4,7 @@ import Total from "./Total.jsx";
 import styles from "./app.scss";
 import Icon from "./icon.png";
 import 'antd/dist/antd.css';
+import request from './configs/request.js';
 
 
 
@@ -14,6 +15,14 @@ class App extends PureComponent {
       num: 0
     }
     this.handleClick = this.handleClick.bind(this);
+  }
+  componentDidMount() {
+    this.getDataList()
+  }
+  getDataList() {
+    request.post("/province/province_list").then(res => {
+      console.log(res);
+    })
   }
   handleClick() {
     this.setState((state) => {
