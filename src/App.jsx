@@ -19,6 +19,7 @@ class App extends PureComponent {
   componentDidMount() {
     this.getDataList()
   }
+  // test
   getDataList() {
     request.post("/province/province_list").then(res => {
       console.log(res);
