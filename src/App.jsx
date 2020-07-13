@@ -35,7 +35,7 @@ class App extends PureComponent {
     return (
       <div>
         <div className="title">
-          react-template
+          react-template （nginx代理测试）
         </div>
         <p className={styles.title}>num值: {num}</p>
         <button onClick={this.handleClick}>add</button>
