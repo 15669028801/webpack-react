@@ -1,3 +1,13 @@
+body,html{
+  height: 100%;
+  background: #eee;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .title{
   font-size: 18px;
   font-weight: 800;
@@ -5,5 +15,8 @@
   text-decoration: underline;
 }
 img{
-  background-color: blue;
+  height: 500px;
+}
+p{
+  color: #999;
 }
